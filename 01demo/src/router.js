@@ -1,21 +1,27 @@
 import VueRouter from 'vue-router';
 import account from './main/account.vue';
-import goodslist from './main/goodslist.vue';
 import login from './subcom/login.vue';
 import register from './subcom/register.vue';
+import header from './frame/header.vue';
+import left from './frame/left.vue';
+import content from './frame/content.vue';
 
 
 var router = new VueRouter({
     routes: [
         {
-            path: '/account', component: account,
+            path: '/', component: account,
             children:[
-                {path:'login',component:login},
-                {path:'register',component:register}
+                {path:'account/login',component:login},
+                {path:'account/register',component:register}
             ]
             
         },
-        { path: '/goodslist', component: goodslist },
+        {path:'/index',components:{
+            'default':header,
+            'left':left,
+            'content':content
+        }}
     ]
 });
 export default router;

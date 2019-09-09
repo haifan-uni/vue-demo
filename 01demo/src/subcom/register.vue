@@ -1,6 +1,6 @@
 <template>
     <div>
-         <h1>注册子组件</h1> 
+         <h1>注册模板</h1> 
     </div>
 </template>
 <script>

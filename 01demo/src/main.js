@@ -17,9 +17,6 @@ var vm = new Vue({
     data: {
         msg: '123'
     },
-    // components:{
-    //     login
-    // }
     render: c => c(app),//容器中的内容被清空并且覆盖
     router//挂载路由
 });
