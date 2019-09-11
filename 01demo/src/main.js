@@ -1,10 +1,12 @@
 //项目js入口
-
-import './css/index.css'
 import './css/index.scss'
 import 'bootstrap/dist/css/bootstrap.css'
-import 'jquery/dist/jquery.js'
-import 'bootstrap/dist/js/bootstrap.js'
+
+
+import './_style/css/font-awesome.css'
+
+// import 'jquery/dist/jquery.js'
+// import 'bootstrap/dist/js/bootstrap.js'
 
 import Vue from 'vue';
 import VueRouter from 'vue-router';
